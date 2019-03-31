@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  requesterapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: requesterapi
+    ports:
+      - 9000:9000
+    networks:
+      - network1
+ 
+networks:
+  network1:
